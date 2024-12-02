@@ -1,6 +1,6 @@
 package shapes1.shapeClasses;
 
-public class Square extends GeometricShape {
+public class Square {
 
 	private Double side1 = 2.0;
 

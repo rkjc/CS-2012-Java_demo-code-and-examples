@@ -1,0 +1,11 @@
+printing an array of random numbers
+623
+621
+556
+530
+445
+304
+256
+971
+205
+677

@@ -22,7 +22,7 @@ public class TextWidgetMyPractice_2 extends Application {
 			// ------------- making the text object -------------f
 
 			// create a new Text object instance
-			Text messageText = new Text(200, 400, "Hello gooey World!");
+			Text messageText = new Text(100, 100, "Hello gooey World!");
 			
 			Font prettyLetters = Font.font("Times New Roman", FontWeight.NORMAL, FontPosture.REGULAR, 24);
 			

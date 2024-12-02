@@ -12,7 +12,7 @@ public class GeometryMain {
 		
 		circ2 = circ1;
 		
-		Square bob = new Square();
+		Square bleen = new Square();
 		Object gomon = new Object();
 		
 		gomon = circ1;
@@ -23,7 +23,8 @@ public class GeometryMain {
 		} else {
 			System.out.println(  ( (Square)gomon ).getSide1() );
 		}
-			
+	
+				
 
 	}
 

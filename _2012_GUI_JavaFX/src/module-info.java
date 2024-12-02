@@ -15,5 +15,5 @@ module _11_GUI_JavaFX {
 	exports f_images;
 	exports g_keyboardInput;
 	exports h_mouseInput;
-	
+	exports k_guiComparableEquals;
 }

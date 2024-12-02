@@ -1,18 +1,16 @@
 package shapes1.shapeClasses;
 
-public abstract class GeometricShape extends Object {
+public abstract class GeometricShape {
 
 	private String color = "";
-	
 	private static double line = 1.0;
-	
-	protected String borderColor = "black";
-	
+	private String borderColor = "black";
 	private int layer = 0;
 	private String tags[];
-
+	
 	public static int objectCount = 0;
 
+	
 	// flavor
 	// weight
 	// border
@@ -35,7 +33,11 @@ public abstract class GeometricShape extends Object {
 	// ------------ Methods ----------------
 
 	
-	public abstract String toString();
+	public abstract double getArea();
+	
+	
+	
+	//public abstract String toString();
 	
 	
 	public void setColor(String color) {

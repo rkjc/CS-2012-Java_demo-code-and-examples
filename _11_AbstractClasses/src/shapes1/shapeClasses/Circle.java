@@ -15,12 +15,19 @@ public class Circle extends GeometricShape {
 		//super.setColor(newColor);
 	}
 	
-	public Circle(double rad, String newColor) {
-		super(newColor);
-		this.radius = rad;
-		//this.color = newColor;
-		super.borderColor = "orange";
+	
+	@Override
+	public double getArea() {
+		// TODO Auto-generated method stub
+		return 0;
 	}
+	
+//	public Circle(double rad, String newColor) {
+//		super(newColor);
+//		this.radius = rad;
+//		//this.color = newColor;
+//		super.borderColor = "orange";
+//	}
 	
 // -------------- Methods -------------
 	
@@ -30,28 +37,22 @@ public class Circle extends GeometricShape {
 		return super.getColor();
 	}
 	
-	
-	public double getArea() {
-		return 2 * 3.14159 * radius * radius;
-	}
-//	
-//	public int doThing() {
-//		return 99999;
-//	}
-//	
 
-//	public Double getRadius() {
-//		return radius;
-//	}
-//
-//	public void setRadius(Double radius) {
-//		this.radius = radius;
-//	}
+
+	public Double getRadius() {
+		return radius;
+	}
+
+	public void setRadius(Double radius) {
+		this.radius = radius;
+	}
 
 	@Override
 	public String toString() {
 		return "circle color= " + super.getColor() + " radius= " + this.radius;
 	}
+
+
 	
 
 //	public String toString(int bob) {
