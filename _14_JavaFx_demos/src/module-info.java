@@ -6,5 +6,6 @@ module _14_JavaFx_demos {
     
     exports panesAndStuff;
     exports mouseStuff;
+    exports magic8ball;
 
 }
