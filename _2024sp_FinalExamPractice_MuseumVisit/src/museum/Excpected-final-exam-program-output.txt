@@ -1,0 +1,58 @@
+ 
+Hi there Richard Cross.
+Welcome to the Museum.
+Enjoy your journey of discovery today as you visit the exhibits
+--------------------------------
+* Display type is PEDISTAL *
+Name of Artifact: Egyptian Mummy
+Description of Artifact: found in Pyramid
+Time period of Artifact: 1397 BCE
+Name of Person: Amenophis II
+Artifact is Cursed: true
+Protected by Magic Seal: false
+Richard Cross said: Hmm, this is interesting.
+--------------------------------
+* Display type is HANGFROMCELING *
+Name of Artifact: Pterodactyl
+Description of Artifact: Monsterous flying terror with a huge tooth filled bill
+Time period of Artifact: Jurassic and Cretaceous Periods
+Type of Dinasaur is Flying Pterodactyloidea
+Richard Cross said: Hmm, this is interesting.
+--------------------------------
+* Display type is PEDISTAL *
+Name of Artifact: Tyranasaurus Rex
+Description of Artifact: Armored mechanical battle dinasaur with machinegun used in WW2
+Time period of Artifact: 1945
+Type of Dinasaur is Bipedal with tail
+Richard Cross said: Don't forget to save early, save often.
+--------------------------------
+* Display type is PEDISTAL *
+Name of Artifact: King Charlemane Gold Plated Armor
+Description of Artifact: Full suit of battle ready plate armor
+Time period of Artifact: 1066
+Type of armor is plate armor
+Original Owner is King Charlemane
+Richard Cross said: Golly gosh gee willikers that was fun
+--------------------------------
+* Display type is WALL *
+Name of Artifact: Prince Johns Sheild and Crest
+Description of Artifact: This type of shield was weak against Ballista, as can be seen by the large hole in it that killed Prince John
+Time period of Artifact: 1642 AD
+Type of armor is One handed round shield
+Original Owner is Prince John of Nauhtingham
+Richard Cross said: Don't forget to save early, save often.
+--------------------------------
+* Display type is GLASSCASE *
+Name of Artifact: Frozen Iceman
+Description of Artifact: found in French mountains
+Time period of Artifact: 3300 BCE
+Name of Person: Ötzi
+Artifact is Cursed: true
+Protected by Magic Seal: true
+Richard Cross said: Don't forget to save early, save often.
+
+Thank you Richard Cross for visiting the Museum.
+Looking forward to seeing you again in the future!
+--------------------------------
+your score is 100
+--------------------------------

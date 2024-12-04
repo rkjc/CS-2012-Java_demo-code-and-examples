@@ -1,0 +1,74 @@
+ 	Spring Semester 2022 
+ 
+Cursed.java
+MyPersona.java
+StartMuseumMain.java
+
+------------------------------------------------------------------
+Artifact.java - this class is abstract and must have these public methods
+	public Artifact(String name)
+	
+	public String getNameOfArtifact()
+	public void setNameOfArtifact(String nameOfArtifact)
+	public String getDescription() 
+	public void setDescription(String description) 
+	public String getWhatYear() 
+	public void setWhatYear(String thatYear) 
+	public String toString() 
+	
+------------------------------------------------------------------
+MedievalArmor.java
+inherits from Artifact
+must implement Cursed.java
+    additionally must also have these public methods:
+    
+        public MedievalArmor(String nameOfThisArtifact) 
+        public MedievalArmor(String nameOfThisArtifact, String originalOwner, boolean isCursed,
+                boolean magicProtection, String descrption, String fromYear, String armorType) 
+        
+        public String getArmorType() 
+        public void setArmorType(String armorType) 
+        public String getOriginalOwner() 
+        public void setOriginalOwner(String originalOwner) 
+        public String toString()
+
+------------------------------------------------------------------
+Mummy.java  -  must have these public methods
+inherits from Artifact
+must implement Cursed.java
+    additionally must also have these public methods:
+    
+        public Mummy(String nameOfThisArtifact) 
+        public Mummy(String nameOfThisArtifact, String nameOfPerson, boolean isCursed, boolean magicProtection,
+                String descrption, String fromYear) 
+
+        public void setNameOfPerson(String nameOfPerson)
+        public String getNameOfPerson() 
+        public String toString()
+
+------------------------------------------------------------------
+Dinasaurs.java  -  must have these public methods
+inherits from Artifact
+*this class does not implement Cursed* (Dinasaurs are our friends)
+
+	public Dinasaurs(String nameOfThisArtifact, String typeOfDinasaur, String descrption, String year)
+	public String getTypeOfDinasaur() 
+	public void setTypeOfDinasaur(String typeOfDinasaur) 
+	public String toString()
+	
+------------------------------------------------------------------
+Exhibit.java  -  must have these public methods
+	public enum DisplayType {WALL, GLASSCASE, PEDISTAL, HANGFROMCELING};
+
+	public Exhibit() 
+	public Exhibit(DisplayType display, Artifact artifact) 
+	
+	public DisplayType getDisplayType()
+	public void setDisplayType(DisplayType type)
+	public ArrayList<Artifact> getArtifactList() 
+	public void addArtifact(Artifact newArt)
+	public String toString()
+
+------------------------------------------------------------------
+
+

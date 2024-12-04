@@ -1,0 +1,292 @@
+ CS-2012 sec-01 Final Exam - Programming Exercise
+
+Write the supporting Class files for the Visit the Museum program.
+
+Upload all for your work in a zip file.
+
+
+
+This final will require you to write the supporting class and interface files that will be used by the main program when it runs.
+
+The file structure, package names, class and interface names, and all of the method names are predefined and should match those in the main program so that it will properly function.
+
+The file structure will look like this:
+Make sure that you name the package 'museum'.
+
+── src
+   └── museum
+       ├── Artifact.java
+       ├── Cursed.java
+       ├── Dinosaurs.java
+       ├── Exhibit.java
+       ├── MedievalArmor.java
+       ├── Mummy.java
+       ├── MyPersona.java
+       └── StartMuseumMain.java
+
+
+
+I have included these files for you to use:
+(use the download arrow at the end of the link to download, Canvas just sort of spins on the file if you try to open it here)
+
+StartMuseumMain.java   StartMuseumMain-2.java
+Download StartMuseumMain-2.java
+MyPersona.java   MyPersona-1.java Download MyPersona-1.java
+Cursed.java  StartMuseumMain-3.java
+
+Download StartMuseumMain-3.java
+
+
+
+I have also uploaded these to GitHub:
+
+https://github.com/rkjc/CS-2012-Java-Programming-II_demo-code-and-examples/tree/main/_Sp24_FINAL_EXAM_Museum/src
+
+Links to an external site.
+
+
+
+You have to provide the rest of the program files.
+
+Make sure to not change the files StartMuseumMain.java and Cursed.java. I will be using my own copies of those files to run and check your work, changing them may cause your program break.
+
+You must change the MyPersona.java file to contain your information not mine. I will be using that to help me assign your grade to you.
+
+The Artifact Class and its sub classes should not implement a no-argument constructor.
+
+The Exhibit class will need to have a no-argument constructor.
+
+=======================================
+
+
+Artifact.java
+MedievalArmor.java
+Mummy.java
+Dinosaurs.java
+Exhibit.java
+
+The Sub-classes must not implement a no-argument constructor.
+  for example, new Mummy() should fail, but new Mummy("zondar") should work.
+
+
+------------------------------------------------------------------
+Artifact.java - this class is abstract and must have these public methods
+
+    Constructor:
+        public Artifact(String name)
+
+	public String getNameOfArtifact()
+	public void setNameOfArtifact(String nameOfArtifact)
+	public String getDescription()
+	public void setDescription(String description)
+	public String getWhatYear()
+	public void setWhatYear(String thatYear)
+	public String toString()
+
+------------------------------------------------------------------
+MedievalArmor.java
+  inherits from Artifact
+    must implement Cursed.java
+
+    additionally must also have these public methods:
+
+        Constructors:
+            public MedievalArmor(String nameOfThisArtifact)
+            public MedievalArmor(String nameOfThisArtifact, String originalOwner, boolean isCursed,
+                boolean magicProtection, String descrption, String fromYear, String armorType)
+
+        Methods:
+            public String getArmorType()
+            public void setArmorType(String armorType)
+            public String getOriginalOwner()
+            public void setOriginalOwner(String originalOwner)
+            public String toString()
+
+------------------------------------------------------------------
+Mummy.java  -  must have these public methods
+  inherits from Artifact
+     must implement Cursed.java
+
+  additionally must also have these public methods:
+
+      Constructors:
+          public Mummy(String nameOfThisArtifact)
+          public Mummy(String nameOfThisArtifact, String nameOfPerson, boolean isCursed, boolean magicProtection,
+                String descrption, String fromYear)
+
+      Methods:
+          public void setNameOfPerson(String nameOfPerson)
+          public String getNameOfPerson()
+          public String toString()
+
+------------------------------------------------------------------
+Dinosaurs.java  -  must have these public methods
+
+   inherits from Artifact
+       *this class does not implement Cursed* (Dinosaurs are our friends)
+
+      Constructors:
+          public Dinosaurs(String nameOfThisArtifact)
+          public Dinosaurs(String nameOfThisArtifact, String typeOfDinasaur, String descrption, String year)
+
+      Methods:
+          public String getTypeOfDinasaur()
+	  public void setTypeOfDinasaur(String typeOfDinasaur)
+	  public String toString()
+
+------------------------------------------------------------------
+Exhibit.java  -  must have these public methods
+
+      Constructors:
+          public Exhibit()
+	  public Exhibit(DisplayType display, Artifact artifact)
+
+      Methods:
+	  public DisplayType getDisplayType()
+	  public void setDisplayType(DisplayType type)
+	  public ArrayList getArtifactList()
+	  public void addArtifact(Artifact newArt)
+	  public String toString()
+
+
+------------------------------------------------------------------
+
+
+
+##################################################################
+
+If it runs correctly the output from this program should be:
+
+-------------------------------------------------------------------
+
+
+
+Hi there yourname goes here.
+
+Welcome to the Museum.
+
+Enjoy your journey of discovery today as you visit the exhibits
+
+--------------------------------
+
+* Display type is PEDISTAL
+
+Name of Artifact: Egyptian Mummy
+
+Description of Artifact: found in Pyramid
+
+Time period of Artifact: 1397 BCE
+
+Name of Person: Amenophis II
+
+Artifact is Cursed: true
+
+Protected by Magic Seal: false
+
+ user saying --> yourname goes here said: Golly gosh gee willikers that was fun
+
+--------------------------------
+
+Hi there yourname goes here.
+
+Welcome to the Museum.
+
+Enjoy your journey of discovery today as you visit the exhibits
+
+--------------------------------
+
+* Display type is PEDISTAL
+
+Name of Artifact: Egyptian Mummy
+
+Description of Artifact: found in Pyramid
+
+Time period of Artifact: 1397 BCE
+
+Name of Person: Amenophis II
+
+Artifact is Cursed: true
+
+Protected by Magic Seal: false
+
+ user saying --> yourname goes here said: Golly gosh gee willikers that was fun
+
+--------------------------------
+
+* Display type is HANGFROMCELING
+
+Name of Artifact: Pterodactyl
+
+Description of Artifact: Monsterous flying terror with a huge tooth filled bill
+
+Time period of Artifact: Jurassic and Cretaceous Periods
+
+Type of Dinosaur is Flying Pterodactyloidea
+
+ user saying --> yourname goes here said: Hmm, this is interesting.
+
+--------------------------------
+
+* Display type is PEDISTAL
+
+Name of Artifact: Tyranasaurus Rex
+
+Description of Artifact: Armored mechanical battle dinasaur with machinegun used in WW2
+
+Time period of Artifact: 1945
+
+Type of Dinosaur is Bipedal with tail
+
+ user saying --> yourname goes here said: Don't forget to save early, save often.
+
+--------------------------------
+
+* Display type is PEDISTAL
+
+Name of Artifact: King Charlemane Gold Plated Armor
+
+Description of Artifact: Full suit of battle ready plate armor
+
+Time period of Artifact: 1066
+
+Type of armor is plate armor
+
+Original Owner is King Charlemane
+
+ user saying --> yourname goes here said: Don't forget to save early, save often.
+
+--------------------------------
+
+* Display type is WALL
+
+Name of Artifact: Prince Johns Sheild and Crest
+
+Description of Artifact: This type of shield was weak against Ballista, as can be seen by the large hole in it that killed Prince John
+
+Time period of Artifact: 1642 AD
+
+Type of armor is One handed round shield
+
+Original Owner is Prince John of Nauhtingham
+
+ user saying --> yourname goes here said: Oops, sorry I'm late
+
+--------------------------------
+
+* Display type is GLASSCASE
+
+Name of Artifact: Frozen Iceman
+
+Description of Artifact: found in French mountains
+
+Time period of Artifact: 3300 BCE
+
+Name of Person: Ötzi
+
+Artifact is Cursed: true
+
+Protected by Magic Seal: true
+
+ user saying --> yourname goes here said: Hmm, this is interesting.
+
+
